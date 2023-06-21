@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EFEEE8"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -21,21 +22,41 @@
             android:textColor="#575013"
             android:textSize="34sp" />
 
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            tools:text="Numero1" />
+
         <EditText
             android:id="@+id/numero1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="5dp"
             android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:backgroundTint="#C4CBE3"
             android:ems="10"
             android:hint="Digite un numero"
             android:inputType="number|numberDecimal|numberSigned" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:text="Numero2"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/numero2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="1dp"
             android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:backgroundTint="#C8CEE3"
             android:ems="10"
             android:hint="Digite un numero"
             android:inputType="number|numberDecimal|numberSigned" />
@@ -43,30 +64,40 @@
         <Button
             android:id="@+id/button_suma"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="13dp"
             android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:backgroundTint="#FFC107"
             android:text="Suma"
-            android:textColorLink="#FFEB3B" />
+            android:textColorHighlight="#FFC107"
+            android:textColorLink="#121210"
+            android:textCursorDrawable="@color/design_default_color_secondary"
+            app:strokeColor="#FFEB3B" />
 
         <Button
             android:id="@+id/button_resta"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="6dp"
             android:layout_weight="1"
-            android:text="Resta" />
+            android:background="#D1C44D"
+            android:text="Resta"
+            android:textColorHighlight="#FFEB3B"
+            android:textColorLink="#FFEB3B" />
 
         <Button
             android:id="@+id/button_division"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="16dp"
             android:layout_weight="1"
+            android:background="#D1C44D"
             android:text="División" />
 
         <Button
             android:id="@+id/button_multiplicacion"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="4dp"
             android:layout_weight="1"
+            android:background="#D1C44D"
             android:text="Multiplicación" />
     </LinearLayout>
 
